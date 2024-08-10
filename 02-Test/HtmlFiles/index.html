@@ -3,17 +3,27 @@
   <head>
     <meta charset="UTF-8" />
     <title>The basic Language of the web: HTML</title>
+    <!-- <style>
+      h1 {
+        color: blue;
+      }
+      div {
+        background-color: blue;
+        height: 10px;
+      }
+    </style> -->
+    <link rel="stylesheet" href="../Style/style.css" />
   </head>
 
   <body>
     <!-- <h1>The basic Language of the web: HTML</h1> -->
-    <header>
+    <div></div>
+    <header class="main-header">
       <h1>📘 The Code Magazine</h1>
       <nav>
         <a href="./blog.html" target="_blank">Blog</a>
         <a href="#">Challenge</a>
         <a href="#">Flexbox</a>
-        <a href="#">Css</a>
         <a href="#">Css Grid</a>
       </nav>
     </header>
@@ -21,7 +31,9 @@
       <header>
         <h2>The Basic Language of the Web: HTML</h2>
         <img src="../imges/laura-jones.jpg" alt="Headshot of Laura Jones" />
-        <p>Posted by <strong>Laura Jones</strong> on Monday, June 21st 2027</p>
+        <p id="author">
+          Posted by <strong>Laura Jones</strong> on Monday, June 21st 2027
+        </p>
       </header>
       <p>
         All modern websites and web applications are built using three
@@ -78,7 +90,7 @@
     </article>
     <aside>
       <h5>Related posts</h5>
-      <ul>
+      <ul class="related">
         <li>
           <img
             src="../imges/related-1.jpg"
@@ -86,7 +98,7 @@
             width="70"
           />
           <a href="#">How to learn Web Development</a>
-          <p>By Jonas</p>
+          <p class="related-author">By Jonas</p>
         </li>
         <li>
           <img
@@ -95,7 +107,7 @@
             width="70"
           />
           <a href="#">The Unknown Powers of Css</a>
-          <p>By Jim Dillon</p>
+          <p class="related-author">By Jim Dillon</p>
         </li>
         <li>
           <img
@@ -104,10 +116,12 @@
             width="70"
           />
           <a href="#">Why JavaScript is Awesome</a>
-          <p>By Matilda</p>
+          <p class="related-author">By Matilda</p>
         </li>
       </ul>
     </aside>
-    <footer>Copyright &copy; 2017 by the Code Magazine.</footer>
+    <footer>
+      <p id="copyright">Copyright &copy; 2017 by the Code Magazine.</p>
+    </footer>
   </body>
 </html>
