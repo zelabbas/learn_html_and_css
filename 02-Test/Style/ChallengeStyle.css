@@ -41,8 +41,13 @@ article p {
   color: gray;
 }
 
-li {
+.product-list li {
   list-style-type: square;
+  margin-bottom: 10px;
+}
+
+.product-list li:last-child {
+  margin: 0;
 }
 
 .hover-button {
