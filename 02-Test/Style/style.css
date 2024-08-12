@@ -121,14 +121,6 @@ nav {
   margin-bottom: 50px;
 }
 
-aside {
-  background-color: #f7f7f7;
-  border-top: 5px solid #1098ad;
-  border-bottom: 5px solid #1098ad;
-  border-radius: 20px;
-  padding: 50px 0;
-}
-
 /* chose the first element (pseudo class) */
 
 li:first-child {
@@ -200,4 +192,24 @@ nav {
 
 .post-header {
   margin-bottom: 40px;
+}
+
+aside {
+  background-color: #f7f7f7;
+  border-top: 5px solid #1098ad;
+  border-bottom: 5px solid #1098ad;
+  border-radius: 20px;
+  padding: 50px 0;
+  width: 500px;
+}
+
+.post-img {
+  width: 100%;
+  height: auto;
+}
+.container {
+  width: 700px;
+  /* margin-left: auto;
+  margin-right: auto; */
+  margin: 0 auto;
 }
