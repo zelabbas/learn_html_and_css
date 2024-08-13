@@ -1,7 +1,9 @@
 body {
   border: 5px solid black;
+  margin: 40px 200px;
   font-family: sans-serif;
   background-color: rgb(190, 226, 226);
+  position: relative;
 }
 
 article h2 {
@@ -18,6 +20,7 @@ article {
   justify-content: center;
   padding: 20px;
   margin: 0 auto;
+  position: relative;
 }
 
 a:link {
@@ -72,4 +75,51 @@ article p {
 .product-details {
   text-transform: uppercase;
   font-size: 20px;
+}
+
+.sale {
+  font-size: 12px;
+  color: white;
+  text-transform: uppercase;
+  background-color: red;
+  width: 75px;
+  margin: 0;
+  padding: 8px 0;
+  text-align: center;
+  font-weight: bold;
+  position: absolute;
+  top: -15px;
+  left: -37px;
+}
+
+.list-color span {
+  width: 30px;
+  height: 30px;
+  display: inline-block;
+  margin-top: 20px;
+  margin-right: 10px;
+}
+
+.black-color {
+  background-color: black;
+}
+
+.blue-color {
+  background-color: blue;
+}
+
+.red-color {
+  background-color: red;
+}
+
+.yellow-color {
+  background-color: yellow;
+}
+
+.green-color {
+  background-color: green;
+}
+
+.maroon-color {
+  background-color: maroon;
 }
