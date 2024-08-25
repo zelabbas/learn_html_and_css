@@ -1,0 +1,77 @@
+<!-- just a small test to know how to fetch the data~~~~~ -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Fetch API Example</title>
+  </head>
+  <body>
+    <div id="data-div">Loading...</div>
+    <div id="data-time">time...</div>
+    <script>
+      var dataDiv = document.getElementById("data-div");
+      var dataTime = document.getElementById("data-time");
+
+      async function fetchData() {
+        try {
+          const response = await fetch(
+            "https://api.coindesk.com/v1/bpi/currentprice.json"
+          );
+          const data = await response.json();
+          return data;
+        } catch (error) {
+          console.log("error fetching data:", error);
+          dataDiv.innerHTML = "Failed to load data.";
+        }
+      }
+
+      fetchData().then((data) => {
+        if (data) {
+          console.log(data);
+          dataDiv.innerHTML = `Bitcoin Price (USD): ${data.bpi.USD.rate}`;
+          dataTime.innerHTML = `Updated on : ${data.time.updated}`;
+        }
+      });
+    </script>
+  </body>
+</html>
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Fetch API 42 Example</title>
+  </head>
+  <body>
+    <div id="data-div">Loading...</div>
+    <div id="data-time">time...</div>
+    <script>
+      var dataDiv = document.getElementById("data-div");
+      var dataTime = document.getElementById("data-time");
+
+      async function fetchData() {
+        try {
+          const response = await fetch("https://api.intra.42.fr/v2/users");
+          const data = await response.json();
+          return data;
+        } catch (error) {
+          console.log("error  fetching data:", error);
+          dataDiv.innerHTML = "Failed to load data.";
+        }
+      }
+
+      fetchData().then((data) => {
+        if (data) {
+          console.log(data);
+          dataDiv.innerHTML = `API 42 Data: ${data.someField}`;
+          dataTime.innerHTML = `Updated on : ${data.email}`;
+        }
+      });
+    </script>
+  </body>
+</html> -->
+
+<!-- https://www.aliexpress.com/item/1005007018723201.html?spm=a2g0o.detail.pcDetailTopMoreOtherSeller.1.18edGFtpGFtpYU&gps-id=pcDetailTopMoreOtherSeller&scm=1007.40000.327270.0&scm_id=1007.40000.327270.0&scm-url=1007.40000.327270.0&pvid=9bdac0ac-5ea1-4108-89ce-eec3096691a7&_t=gps-id:pcDetailTopMoreOtherSeller,scm-url:1007.40000.327270.0,pvid:9bdac0ac-5ea1-4108-89ce-eec3096691a7,tpp_buckets:668%232846%238112%231997&pdp_npi=4%40dis%21MAD%21214.53%21102.97%21%21%21155.76%2174.76%21%40210388c917232314702557313ee897%2112000039094600310%21rec%21MA%21%21ABXZ&utparam-url=scene%3ApcDetailTopMoreOtherSeller%7Cquery_from%3A&search_p4p_id=202408091224303001451026665010868134_0 -->
