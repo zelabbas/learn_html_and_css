@@ -64,9 +64,10 @@ h2 {
 
 .btn:hover,
 .btn:active {
-  background-color: #099268;
+  background-color: #087f5b;
   transition: 0.5s;
   /* background-color: red; */
+  box-shadow: 5px 5px 5px #000;
 }
 
 .btn--big {
@@ -106,6 +107,16 @@ h1 {
 
 img {
   width: 100%;
+  border-radius: 5px;
+}
+
+header img {
+  width: 100%;
+  box-shadow: 5px 5px 5px rgb(169, 166, 166);
+}
+
+.testimonial-section .shodow-img {
+  box-shadow: 5px 5px 5px #000;
 }
 
 /* FEATURES */
@@ -115,7 +126,7 @@ img {
   width: 32px;
   height: 32px;
   margin-bottom: 16px;
-  /* background-color: #cec7c7; */
+  background-color: #e2f7ea;
   border-radius: 50%;
 }
 
@@ -154,6 +165,10 @@ img {
 }
 
 /* CHAIRS */
+
+.chair {
+  box-shadow: 0px 2px 5px 2px rgb(169, 166, 166);
+}
 .chair-box {
   padding: 24px;
 }
@@ -181,6 +196,7 @@ h3 {
 
 .chair-icon {
   stroke: #087f5b;
+  /* background-color: #e2f7ea; */
   height: 24px;
   width: 24px;
 }
