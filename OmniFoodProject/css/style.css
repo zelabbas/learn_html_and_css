@@ -347,3 +347,7 @@ body {
   color: #ddd;
   margin-bottom: 1.2rem;
 }
+
+strong {
+  font-weight: 500;
+}
