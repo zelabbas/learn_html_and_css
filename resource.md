@@ -28,6 +28,8 @@
 
 # heroicons
 
+# ionic (https://ionic.io/ionicons)
+
 <!-- for faces -->
 
 # UI faces
