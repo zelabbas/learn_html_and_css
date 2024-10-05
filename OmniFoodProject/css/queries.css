@@ -114,10 +114,11 @@
   /* show mobile button */
   .btn-mobile-nav {
     display: block;
+    z-index: 9999;
   }
 
   .main-nav {
-    background-color: #ffffff76;
+    background-color: #fffffff6;
     position: absolute;
     top: 0;
     left: 0;
