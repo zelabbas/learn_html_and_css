@@ -5,7 +5,7 @@
 /* Below 1344px (smaller Desktops) */
 /*  */
 
-@media (max-width: 84em) {
+@media (max-width: 84em) { 
   .hero {
     max-width: 120rem;
   }
