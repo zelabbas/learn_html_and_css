@@ -76,6 +76,7 @@ button {
     border: none;
     color: red;
     font-size: 2rem;
+    cursor: pointer;
 }
 
 .emoji:hover {
