@@ -57,6 +57,8 @@ html {
 
 .emoji {
     font-size: 5rem;
+    filter: grayscale(1);
+    transition: all 0.5s;
 }
 
 .text {
@@ -74,4 +76,10 @@ button {
     border: none;
     color: red;
     font-size: 2rem;
+}
+
+.emoji:hover {
+    font-size: 5rem;
+    filter: grayscale(0);
+    cursor: pointer;
 }
